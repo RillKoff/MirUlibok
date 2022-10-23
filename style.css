@@ -890,3 +890,153 @@
     border-radius: 10px;
     cursor: pointer;
 }
+.footer_wrapper {
+    width: 100%;
+    margin-top: 146px;
+}
+
+.footer {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid rgba(96, 96, 96, 0.17);
+    padding-top: 43px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_logo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer_logo button {
+    font-size: 20px;
+    color:#EB720C;
+    background-color: transparent;
+    border: 1px solid #EB720C;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer_logo_logo {
+    display: flex;
+}
+
+.footer_logo_text {
+    margin-left: 10px;
+}
+
+.footer_info {
+    margin-left: 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.footer_contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_contacts_location {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer_contacts_location>p {
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 24px;
+    margin-bottom: 10px;
+}
+
+.footer_contacts_location>p::before {
+    position: absolute;
+    left: -0;
+    content: url(img/location_point.png);
+}
+
+.footer_contacts_location_metro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_contacts_location_metro p {
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 26px;
+}
+
+.footer_contacts_location_metro p::before {
+    position: absolute;
+    content: url(img/black_metro.png);
+    left: -26px;
+}
+
+.footer_contacts>p span {
+    font-weight: 700;
+}
+
+.footer_contacts>p:nth-of-type(1) {
+    font-size: 14px;
+}
+
+.footer_contacts>p:nth-of-type(2) {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer_contacts>p:nth-of-type(2)::before {
+    position: absolute;
+    left: -28px;
+    content: url(img/phone_icon_bold.png);
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.footer_nav {
+    padding-top: 13px;
+    border-top: 1px solid rgba(96, 96, 96, 0.17);
+}
+
+.footer_nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_nav ul li {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.polyt_wrapper {
+    margin-top: 56px;
+    width: 100%;
+    background-color: #000;
+}
+
+.polyt {
+    padding: 25px 0;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.polyt p, .polyt a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.polyt_href a:nth-of-type(1) {
+    margin-right: 54px;
+}
