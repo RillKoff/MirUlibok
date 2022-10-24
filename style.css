@@ -6,7 +6,7 @@
     font-family: 'Roboto';
 }
 
-a {
+a:* {
     color: #000;
 }
 
