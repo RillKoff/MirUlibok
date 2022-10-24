@@ -1037,6 +1037,6 @@
     font-size: 14px;
 }
 
-.polyt_href a:nth-of-type(1) {
+.polyt_href>a:nth-of-type(1) {
     margin-right: 54px;
 }
