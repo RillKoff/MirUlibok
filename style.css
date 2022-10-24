@@ -218,6 +218,37 @@
     color:#EB720C;
 }
 
+.breadCrumps_wrapper {
+    width: 80%;
+    margin: 13px auto 77px auto;
+}
+
+.breadCrumps_wrapper ul {
+    width: fit-content;
+    display: flex;
+    border-bottom: 1px solid #EB720C;
+    padding-bottom: 8px;
+}
+
+.breadCrumps_nonActive {
+    color: #787878;
+}
+
+.breadCrumps_wrapper ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.breadCrumps_wrapper ul li:first-of-type {
+    margin-left: 0;
+}
+
+.breadCrumps_wrapper ul li:not(:last-of-type)::after {
+    content: url(img/arrow_right.png);
+    position: absolute;
+    right: -28px;
+}
+
 .presentation_wrapper {
     box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 5%) inset;
     width: 100%;
@@ -1039,4 +1070,88 @@
 
 .polyt_href a:nth-of-type(1) {
     margin-right: 54px;
+}
+
+.contacts_page .active_contacts_metro {
+    background-color: #951FDD;
+    color: #fff;
+    border: 1px solid #951FDD !important;
+}
+
+.contacts_page .active_contacts_metro::before {
+    filter: brightness(0) invert(1);
+}
+
+.about_wrapper {
+    width: 100%;
+}
+
+.about_feature {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.about_feature span {
+    color: #EB720C;
+    font-size: 25px;
+}
+
+.about_feature p {
+    font-size: 20px;
+}
+
+.about_feature_first, .about_feature_second, .about_feature_third {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_feature_first, .about_feature_second {
+    margin-bottom: 50px;
+}
+
+.about_feature_first img, .about_feature_second img, .about_feature_third img {
+    max-height: 526px;
+}
+
+.about_feature_second_text {
+    margin-left: 21px;
+}
+
+.about_feature_first_text, .about_feature_third_text {
+    margin-right: 21px;
+}
+
+.about_feature_first_text h4 {
+    font-size: 45px;
+    color: #EB720C;
+    margin-bottom: 34px;
+}
+
+.about_feature_first_text p:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+
+.our_equipment_wrapper {
+    width: 100%;
+    margin-top: 66px;
+}
+
+.our_equipment_wrapper h4 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.our_partners_wrapper {
+    width: 100%;
+    margin-top: 69px;
+    margin-bottom: 200px;
+}
+
+
+.our_partners_wrapper h4 {
+    text-align: center;
+    font-size: 45px;
 }
