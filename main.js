@@ -11,3 +11,5 @@ drop_down_hover.addEventListener('mouseout', () => {
     drop_down_menu.classList.add('display_none');
     drop_down_a.classList.remove('header_nav_drop_down_a_hover')
 })
+
+const info_slider = document.querySelector('.info_slider');

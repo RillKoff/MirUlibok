@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +18,7 @@
         <div class="header_wrapper">
             <div class="header_info">
                 <div class="header_info_logo">
-                    <a href="../index.html"><img src="../img/main_logo.png" alt="Логотип"></a>
+                    <a href="index.html"><img src="img/main_logo.png" alt="Логотип"></a>
                     <div class="header_info_logo_text">
                         <h1>Мир Улыбок</h1>
                         <p>стоматология</p>
@@ -156,31 +162,24 @@
     <div class="info_wrapper">
         <div class="info">
             <h4>Что Важно знать о стоматологии Мир Улыбок</h4>
-            <div class="info_slider">
-                <div class="info_slider_not_main">
-                    <h4>Сотрудничество<span><br> с лицензированными лабораториями</span></h4>
+            <div class="swiper info_slider_wrapper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper info_slider">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                            <h4>Сотрудничество<span><br> с лицензированными лабораториями</span></h4>
+                            <p class="info_slider_subtext">Каждые врач имеет соответствующие сертификаты, который позволяет ему осуществлять то или иное лечение, после соответствующего обучения.</p>
+                    </div>
+                    <div class="swiper-slide">
+                            <h4><span>Сертифицированные специалисты</span><br> различных направлений</h4>
+                            <p class="info_slider_subtext">Каждые врач имеет соответствующие сертификаты, который позволяет ему осуществлять то или иное лечение, после соответствующего обучения.</p>
+                    </div>
+                    <div class="swiper-slide">
+                            <h4><span>Подарки и бонусы</span><br> для всех клиентов</h4>
+                            <p class="info_slider_subtext">Каждые врач имеет соответствующие сертификаты, который позволяет ему осуществлять то или иное лечение, после соответствующего обучения.</p>
+                    </div>
                 </div>
-                <div class="info_slider_main">
-                    <h4><span>Сертифицированные специалисты</span><br> различных направлений</h4>
-                    <p>Каждые врач имеет соответствующие сертификаты, который позволяет ему осуществлять то или иное лечение, после соответствующего обучения.</p>
-                </div>
-                <div class="info_slider_not_main">
-                    <h4><span>Подарки и бонусы</span><br> для всех клиентов</h4>
-                </div>
-            </div>
-            <div class="info_slider_dots">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div class="info_slider_dots_active"></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="swiper-pagination" style="display: flex; justify-content: center;"></div>
             </div>
         </div>
     </div>
@@ -199,13 +198,13 @@
     </div>
     <div class="out_doctors">
         <h4>Наши врачи</h4>
-        <div class="out_doctors_slider">
+        <!-- <div class="out_doctors_slider">
             <div class="out_doctors_slide">
                 <div class="out_doctors_slide_content">
                     <div class="out_doctors_slide_content_icons">
-                        <img src="img/doctors_slider/main.png" alt="">
-                        <img src="img/doctors_slider/chat.png" alt="">
-                        <img src="img/doctors_slider/work.png" alt="">
+                        <img src="img/doctors/main.png" alt="">
+                        <img src="img/doctors/chat.png" alt="">
+                        <img src="img/doctors/work.png" alt="">
                     </div>
                     <div class="out_doctors_slide_content_text">
                         <h3>Павленко Николай Сергеевич</h3>
@@ -213,6 +212,52 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="swiper doctors_slider_wrapper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper doctors_slider">
+                <!-- Slides -->
+                <div class="swiper-slide" style="background: url(img/doctors/shadow.png), url(img/doctors/1.png), linear-gradient(#F6ECE3, #F6ECE3);">
+                    <div class="out_doctors_slide_content">
+                        <div class="out_doctors_slide_content_icons">
+                            <img src="img/doctors/main.png" alt="">
+                            <img src="img/doctors/chat.png" alt="">
+                            <img src="img/doctors/work.png" alt="">
+                        </div>
+                        <div class="out_doctors_slide_content_text">
+                            <h3>Павленко Николай Сергеевич</h3>
+                            <p>Врач стоматолог общей практики, ортопед</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(img/doctors/shadow.png), url(img/doctors/2.png), linear-gradient(#F6ECE3, #F6ECE3);">
+                    <div class="out_doctors_slide_content">
+                        <div class="out_doctors_slide_content_icons">
+                            <img src="img/doctors/main.png" alt="">
+                            <img src="img/doctors/chat.png" alt="">
+                            <img src="img/doctors/work.png" alt="">
+                        </div>
+                        <div class="out_doctors_slide_content_text">
+                            <h3>Карабекян Елена Левоновна</h3>
+                            <p>Детский врач стоматолог</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(img/doctors/shadow.png), url(img/doctors/3.png), linear-gradient(#F6ECE3, #F6ECE3);">
+                    <div class="out_doctors_slide_content">
+                        <div class="out_doctors_slide_content_icons">
+                            <img src="img/doctors/main.png" alt="">
+                            <img src="img/doctors/chat.png" alt="">
+                            <img src="img/doctors/work.png" alt="">
+                        </div>
+                        <div class="out_doctors_slide_content_text">
+                            <h3>Юрченко Михаил Вадимович</h3>
+                            <p>Детский врач стоматолог</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination" style="display: flex; justify-content: center;"></div>
         </div>
     </div>
     <div class="gallery_wrapper">
@@ -354,5 +399,39 @@
         </div>
     </div>
     <script src="main.js"></script>
+    <script>
+        const swiper1 = new Swiper('.info_slider_wrapper', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+            centeredSlides: true,
+            slideActiveClass: 'info_slider_main',
+            slideNextClass: 'info_slider_not_main info_slider_next',
+            slidePrevClass: 'info_slider_not_main info_slider_prev',
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                bulletClass: 'info_slider_dot',
+                bulletElement: 'div',
+                bulletActiveClass: 'info_slider_dots_active',
+                clickable: true,
+            },
+        });
+        const swiper2 = new Swiper('.doctors_slider_wrapper', {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            loop: true,
+            centeredSlides: true,
+            slideActiveClass: 'doctors_slider_main',
+            pagination: {
+                el: '.swiper-pagination',
+                bulletClass: 'info_slider_dot',
+                bulletElement: 'div',
+                bulletActiveClass: 'info_slider_dots_active',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
