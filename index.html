@@ -37,7 +37,7 @@
                     <p>8 (495) 374-85-84</p>
                 </div>
                 <div class="header_info_button">
-                    <a href="#">Заказать звонок</a>
+                    <a href="#" onclick="event.preventDefault()">Заказать звонок</a>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
             <div class="header_nav">
                 <ol>
                     <li><a href="pages/about.html">О нас</a></li>
-                    <li class="header_nav_drop_down_wrapper"><a class="header_nav_drop_down_a" href="#">Услуги</a>
+                    <li class="header_nav_drop_down_wrapper"><a class="header_nav_drop_down_a" href="pages/services.html">Услуги</a>
                         <ol class="header_nav_drop_down display_none">
                             <li><a href="">Терапевтическая стоматология</a></li>
                             <li><a href="">Протезирование зубов</a></li>
@@ -59,10 +59,10 @@
                             <li><a href="">Детская стоматология</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">Цены</a></li>
+                    <li><a href="pages/prices.html">Цены</a></li>
                     <li><a href="pages/doctors.html">Врачи</a></li>
-                    <li><a href="#">Наши работы</a></li>
-                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="pages/doctors/beforeAfterPattern.html">Наши работы</a></li>
+                    <li><a href="pages/reviews.html">Отзывы</a></li>
                     <li><a href="pages/contacts.html">Контакты</a></li>
                     <li><a href="pages/contacts.html">Контакты</a></li>
                 </ol>
@@ -81,7 +81,7 @@
                     <p>от <span>183 000 ₽</span></p>
                     <div class="presentation_slide_buttons">
                         <a href="#">Подробнее</a>
-                        <a href="#">Акции</a>
+                        <a href="pages/promotional.html">Акции</a>
                     </div>
                     <img src="img/main_slider_1.png" alt="">
                 </div>
@@ -119,43 +119,43 @@
         <div class="services">
             <div>
                 <h4>Имплантация </h4>
-                <img src="img/services/1.png" alt="">
+                <img src="img/services/implant.png" alt="">
             </div>
             <div>
                 <h4>Протезирование</h4>
-                <img src="img/services/2.png" alt="">
+                <img src="img/services/protez.png" alt="">
             </div>
             <div>
                 <h4>Эстетическая стоматолоия</h4>
-                <img src="img/services/3.png" alt="">
+                <img src="img/services/profGig.png" alt="">
             </div>
             <div>
                 <h4>Терапевтическая стоматология</h4>
-                <img src="img/services/4.png" alt="">
+                <img src="img/services/teraStom.png" alt="">
             </div>
             <div>
                 <h4>Хирургическая стоматология</h4>
-                <img src="img/services/5.png" alt="">
+                <img src="img/services/hirurg.png" alt="">
             </div>
             <div>
                 <h4>Ортодонтическая стоматология</h4>
-                <img src="img/services/6.png" alt="">
+                <img src="img/services/fixPrikus.png" alt="">
             </div>
             <div>
                 <h4>Гнатология</h4>
-                <img src="img/services/7.png" alt="">
+                <img src="img/services/gnatolog.png" alt="">
             </div>
             <div>
                 <h4>Отбеливание </h4>
-                <img src="img/services/8.png" alt="">
+                <img src="img/services/otbelivanie.png" alt="">
             </div>
             <div>
                 <h4>Пародонтология</h4>
-                <img src="img/services/9.png" alt="">
+                <img src="img/services/parodonto.png" alt="">
             </div>
             <div>
                 <h4>Профилактическая стоматология</h4>
-                <img src="img/services/10.png" alt="">
+                <img src="img/services/profilakt.png" alt="">
             </div>
         </div>
     </div>
@@ -163,9 +163,7 @@
         <div class="info">
             <h4>Что Важно знать о стоматологии Мир Улыбок</h4>
             <div class="swiper info_slider_wrapper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper info_slider">
-                    <!-- Slides -->
                     <div class="swiper-slide">
                             <h4>Сотрудничество<span><br> с лицензированными лабораториями</span></h4>
                             <p class="info_slider_subtext">Каждые врач имеет соответствующие сертификаты, который позволяет ему осуществлять то или иное лечение, после соответствующего обучения.</p>
@@ -198,25 +196,8 @@
     </div>
     <div class="out_doctors">
         <h4>Наши врачи</h4>
-        <!-- <div class="out_doctors_slider">
-            <div class="out_doctors_slide">
-                <div class="out_doctors_slide_content">
-                    <div class="out_doctors_slide_content_icons">
-                        <img src="img/doctors/main.png" alt="">
-                        <img src="img/doctors/chat.png" alt="">
-                        <img src="img/doctors/work.png" alt="">
-                    </div>
-                    <div class="out_doctors_slide_content_text">
-                        <h3>Павленко Николай Сергеевич</h3>
-                        <p>Врач стоматолог общей практики, ортопед</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <div class="swiper doctors_slider_wrapper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper doctors_slider">
-                <!-- Slides -->
                 <div class="swiper-slide" style="background: url(img/doctors/shadow.png), url(img/doctors/1.png), linear-gradient(#F6ECE3, #F6ECE3);">
                     <div class="out_doctors_slide_content">
                         <div class="out_doctors_slide_content_icons">
@@ -320,7 +301,7 @@
                     </p>
                 </div>
                 </div>
-            <button>
+            <button onclick="document.location='pages/reviews.html'">
                 Смотреть все отзывы
             </button>
         </div>
@@ -377,12 +358,12 @@
                 <div class="footer_nav">
                     <ul>
                         <li><a href="pages/about.html">О нас</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Цены</a></li>
+                        <li><a href="pages/services.html">Услуги</a></li>
+                        <li><a href="pages/prices.html">Цены</a></li>
                         <li><a href="pages/doctors.html">Врачи</a></li>
-                        <li><a href="#">Наши работы</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Акции</a></li>
+                        <li><a href="pages/doctors/beforeAfterPattern.html">Наши работы</a></li>
+                        <li><a href="pages/reviews.html">Отзывы</a></li>
+                        <li><a href="pages/promotional.html">Акции</a></li>
                         <li><a href="pages/contacts.html">Контакты</a></li>
                     </ul>
                 </div>
@@ -393,8 +374,8 @@
         <div class="polyt">
             <p>2022 «Мир улыбок» Все права защищены, при перепечатке материалов ссылка на сайт обязательна.Copyright</p>
             <div class="polyt_href">
-                <a href="#">Лицензии</a>
-                <a href="#">Политика конфиденциальности</a>
+                <a href="pages/licenses.html">Лицензии</a>
+                <a href="pages/politics.html">Политика конфиденциальности</a>
             </div>
         </div>
     </div>

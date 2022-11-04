@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="../../style.css">
     <title>Контакты</title>
 </head>
-<body>
+<body class="popup_body">
+    <div class="popup" style="display: none;">
+        <div class="popup_block">
+            <div class="popup_block_close"><p class="popup_block_close_button">X</p></div>
+            <p>Образование:</p>
+            <ul>
+                <li>Самарский государственный медицинский университет Федерального агентства по здравоохранению и социальному развитию – квалификация врач стоматолог 2007 г.</li>
+                <li>Государственное образовательное учреждение высшего профессионального образования « Самарский государственный медицинский университет » - интернатура 2007 г.</li>
+                <li>Государственное бюджетное образовательное учреждение высшего профессионального образования «Самарский государственный медицинский университет»</li>
+                <li>Государственное бюджетное образовательное учреждение высшего профессионального образования «Самарский государственный медицинский университет»</li>
+            </ul>
+            <p>Сертификаты: </p>
+            <ul>
+                <li>Сертификат «Клинические аспекты управления болью</li>
+                <li>в стоматологии - от эндодонтии до имлантации» 2012 г.</li>
+                <li>Сертификат «Качественный оттиск - одна из важных составляющих успешного протезирования и удовлетворенности пациента» 2012 г.</li>
+                <li>Сертификат «Секреты успешной прямой реставрации» 2013 г.</li>
+                <li>сертификат «Стоматология общей практики» 2013 г.</li>
+                <li>сертификат «Стоматология ортопедическая» 2015 г.</li>
+            </ul>
+        </div>
+    </div>
     <div class="header">
         <div class="header_wrapper">
             <div class="header_info">
@@ -31,7 +52,7 @@
                     <p>8 (495) 374-85-84</p>
                 </div>
                 <div class="header_info_button">
-                    <a href="#">Заказать звонок</a>
+                    <a href="#" onclick="event.preventDefault()">Заказать звонок</a>
                 </div>
             </div>
         </div>
@@ -39,7 +60,7 @@
             <div class="header_nav">
                 <ol>
                     <li><a href="about.html">О нас</a></li>
-                    <li class="header_nav_drop_down_wrapper"><a class="header_nav_drop_down_a" href="#">Услуги</a>
+                    <li class="header_nav_drop_down_wrapper"><a class="header_nav_drop_down_a" href="../services.html">Услуги</a>
                         <ol class="header_nav_drop_down display_none">
                             <li><a href="">Терапевтическая стоматология</a></li>
                             <li><a href="">Протезирование зубов</a></li>
@@ -53,12 +74,12 @@
                             <li><a href="">Детская стоматология</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">Цены</a></li>
-                    <li><a href="#">Врачи</a></li>
-                    <li><a href="#">Наши работы</a></li>
-                    <li><a href="reviews.html">Отзывы</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="../prices.html">Цены</a></li>
+                    <li><a href="../doctors.html">Врачи</a></li>
+                    <li><a href="../doctors/beforeAfterPattern.html">Наши работы</a></li>
+                    <li><a href="../reviews.html">Отзывы</a></li>
+                    <li><a href="../contacts.html">Контакты</a></li>
+                    <li><a href="../contacts.html">Контакты</a></li>
                 </ol>
             </div>
         </div>
@@ -82,7 +103,7 @@
                         <li>Сертифицированный врач в области современной эндодонтии</li>
                         <li>Сертифицированный врач в области ортопедической стоматологии</li>
                     </ul>
-                <button>Образование </button>
+                <button class="popup_open">Образование</button>
                 </div>
                 <div class="intelligence_info_cert">
                     <button>Записаться</button>
@@ -158,7 +179,7 @@
                     </p>
                 </div>
                 </div>
-            <button>
+            <button  onclick="document.location='../reviews.html'">
                 Смотреть все отзывы
             </button>
         </div>
@@ -171,7 +192,7 @@
         <div class="footer">
             <div class="footer_logo">
                 <div class="footer_logo_logo">
-                    <img src="../../img/main_logo.png" alt="">
+                    <img src="../img/main_logo.png" alt="">
                     <div class="footer_logo_text">
                         <h1>Мир Улыбок<br></h1>
                         <p>стоматология</p>
@@ -194,14 +215,14 @@
                 </div>
                 <div class="footer_nav">
                     <ul>
-                        <li><a href="about.html">О нас</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="prices.html">Цены</a></li>
-                        <li><a href="doctors.html">Врачи</a></li>
-                        <li><a href="#">Наши работы</a></li>
-                        <li><a href="reviews.html">Отзывы</a></li>
-                        <li><a href="#">Акции</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="../about.html">О нас</a></li>
+                        <li><a href="../services.html">Услуги</a></li>
+                        <li><a href="../prices.html">Цены</a></li>
+                        <li><a href="../doctors.html">Врачи</a></li>
+                        <li><a href="../doctors/beforeAfterPattern.html">Наши работы</a></li>
+                        <li><a href="../reviews.html">Отзывы</a></li>
+                        <li><a href="../promotional.html">Акции</a></li>
+                        <li><a href="../contacts.html">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -211,11 +232,11 @@
         <div class="polyt">
             <p>2022 «Мир улыбок» Все права защищены, при перепечатке материалов ссылка на сайт обязательна.Copyright</p>
             <div class="polyt_href">
-                <a href="#">Лицензии</a>
-                <a href="#">Политика конфиденциальности</a>
+                <a href="licenses.html">Лицензии</a>
+                <a href="politics.html">Политика конфиденциальности</a>
             </div>
         </div>
     </div>
-    <script src="../../main.js"></script>
+    <script src="../main.js"></script>
 </body>
 </html>
