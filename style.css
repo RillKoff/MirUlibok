@@ -1,9 +1,16 @@
+@font-face {
+    font-family: 'RobotoFont';
+    src: url('fonts/Roboto.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Roboto';
+    font-family: 'RobotoFont';
 }
 
 a,li {
